@@ -38,8 +38,9 @@ foreach ($smtpConnections as $connection) {
 
     $mail->setFrom($smtpEmail);
     $mail->addAddress($testEmailTo);
-    $mail->Subject = $i." - ".$testEmailSubject;
+    $mail->Subject = $testEmailSubject;
     $mail->Body = $testEmailBody;
+    $mail->CharSet = 'UTF-8';
 
     try {
         $i++;
