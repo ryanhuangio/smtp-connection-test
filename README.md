@@ -10,4 +10,9 @@ This simply script allows testing multiple SMTP connections. It is quicker than 
 2. Run `php smtp.php` and it will loop through each SMTP connection to check if it works by sending a test email.
 
 If it sends successfully, you will see a message like:
-✅ email@yourdomain.com (smtp.gmail.com) sent succcessfully.
+
+```
+$ php smtp.php
+✅ Email sent from user@domain.com successfully!
+❌ Email failed to send from user@gmail.com.
+```
